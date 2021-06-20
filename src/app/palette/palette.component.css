@@ -1,0 +1,7 @@
+.palette {
+    height: 100px;
+    width:20px;
+    border-color: green;
+    background-color: green;
+    position:absolute;
+}

@@ -1,0 +1,15 @@
+<h2>PING PONG GAME</h2>
+<div class="flex">   
+    <div class="pool rel">
+        <app-palette #leftPalet [distance]="leftPalette"></app-palette>
+        <app-palette #rightPalet [distance]="rightPalette"></app-palette>
+        <figure [ngStyle]="{'top': top+'px','left':left+'px'}" class="circle rel"></figure>
+    </div>
+    <div>
+        <p>Click left arrow to move up</p>
+        <p>And right arrow to move down</p>
+        <p><button (click)="click()">START/RESET</button></p>
+    </div>
+</div>
+   
+
