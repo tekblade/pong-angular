@@ -78,7 +78,7 @@ export class BoardComponent implements OnInit,OnDestroy,AfterViewInit {
         }
         if(middleOfSphere>(this.rightPalet.topMargin+60) && middleOfSphere<=(this.rightPalet.topMargin+80)){
           this.angle=0.2617993878;
-        }
+        }6
         if(middleOfSphere>(this.rightPalet.topMargin+80) && middleOfSphere<=(this.rightPalet.topMargin+100)){
           this.angle=0.5235987756;
         }
@@ -154,16 +154,16 @@ export class BoardComponent implements OnInit,OnDestroy,AfterViewInit {
       }, 
       err => console.log(err),     
     ); 
-    this.intervalSubscription=interval(15).subscribe(_=>this.mainLoop());
+    this.intervalSubscription=interval(0.1).subscribe(_=>this.mainLoop());
   }
   //////////////////////////////////////////////////////////////////////
   move(event:KeyboardEvent):void {
     if(event.keyCode===KEY_CODE.LEFT_ARROW)
       if(this.leftPalet.topMargin>=0)
-        this.leftPalet.topMargin--;
+        this.leftPalet.topMargin=this.leftPalet.topMargin-2;
     if(event.keyCode===KEY_CODE.RIGHT_ARROW)
     if(this.leftPalet.topMargin<=500)
-      this.leftPalet.topMargin++;
+      this.leftPalet.topMargin=this.leftPalet.topMargin+2;
   }
   ////////////////////////////////////////////////////////////////////////////////
   changeRightPalettePosition():void {   
@@ -218,12 +218,12 @@ export class BoardComponent implements OnInit,OnDestroy,AfterViewInit {
   ////////////////////////////////////////////////////////////////////////////////
   moveRightPaletUp():void{
     if(this.rightPalet.topMargin>0)
-      this.rightPalet.topMargin--;
+      this.rightPalet.topMargin=this.rightPalet.topMargin-2;
   }
   //////////////////////////////////////////////////////////////////////////////////
   moveRightPaletDown():void{
     if(this.rightPalet.topMargin<500)
-      this.rightPalet.topMargin++;
+      this.rightPalet.topMargin=this.rightPalet.topMargin+2;
   }
   ///////////////////////////////////////////////////////////////////////////////////////
   getRandomLevel(max) {
