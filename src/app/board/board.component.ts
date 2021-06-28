@@ -154,7 +154,7 @@ export class BoardComponent implements OnInit,OnDestroy,AfterViewInit {
       }, 
       err => console.log(err),     
     ); 
-    this.intervalSubscription=interval(0.1).subscribe(_=>this.mainLoop());
+    this.intervalSubscription=interval(7).subscribe(_=>this.mainLoop());
   }
   //////////////////////////////////////////////////////////////////////
   move(event:KeyboardEvent):void {
