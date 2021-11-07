@@ -1,5 +1,5 @@
 ## Speed of sphere in this application differs in every browser. I recommend to use internet microsoft edge
-
+## left arrow to move palette up, right arrow to move palette down
 
 # PongAngular
 
