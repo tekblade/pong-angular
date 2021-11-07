@@ -1,4 +1,4 @@
-## Speed of sphere in this application differs in every browser. I recommend to use internet explorer/microsoft edge
+## Speed of sphere in this application differs in every browser. I recommend to use internet microsoft edge
 
 
 # PongAngular
