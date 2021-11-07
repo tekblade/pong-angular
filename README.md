@@ -1,3 +1,6 @@
+## Speed of sphere in this application differs in every browser. I recommend to use internet explorer/microsoft edge
+
+
 # PongAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.4.
